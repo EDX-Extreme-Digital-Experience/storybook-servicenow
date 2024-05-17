@@ -18,7 +18,7 @@ export const Headings: Story = {
     args: {
         Text: 'Meus Chamados',
         Size: 'Base',
-        DisableButton: false,
+        link: true,
     }
     
 }
