@@ -1,9 +1,6 @@
 import './Heading.css';
-export interface IHeading {
-    Text?: string;
-    Size?: 'Base' | 'Large';
-    link?: boolean;
-}
+import IHeading from './IHeading';
+
 
 export const Heading = ({
     Text = 'Meus Chamados',
