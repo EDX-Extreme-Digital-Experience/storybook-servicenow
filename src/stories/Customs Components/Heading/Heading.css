@@ -1,0 +1,59 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30vh;
+}
+.Base {
+        font-family: Lato;
+        font-size: 4.4vh;
+        font-weight: 700;
+        line-height: 26.4px;
+        white-space: nowrap;
+        text-align: left;
+}
+
+.Large {
+        font-family: Lato;
+        font-size: 5vh;
+        font-weight: 700;
+        line-height: 35.2px;
+        text-align: left;
+        white-space: nowrap;
+}
+
+a {
+    color: #3C59E7;
+    font-family: Lato;
+    font-size: 3vh;
+    font-weight: 400;
+    line-height: 22.9px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 368px) {
+    .heading {     
+        gap: 20vh;
+    }
+    .Base {
+        max-width: 100%;   
+    }
+    a {
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 250px) {
+    .heading {
+       
+        gap: 10vh;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .heading {
+        width: 100%;
+    }
+    
+}
