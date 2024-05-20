@@ -3,9 +3,9 @@ import IHeading from './IHeading';
 
 
 export const Heading = ({
-    Text = 'Meus Chamados',
-    Size = 'Base',
-    link = true,
+    Text,
+    Size,
+    link,
 }: IHeading) => {
     return (
        <div className="heading">
