@@ -1,0 +1,52 @@
+.link-text--Default {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-content-link, #3C59E7);
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.9px;
+
+}
+
+.link-text--Hovered {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #31418C;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.9px;
+    text-decoration: underline;
+    
+}
+
+.link-text--Visited {
+    color: #31418C;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.9px;
+    
+}
+
+.link-text--Disabled {
+    color: var(--color-content-brand, #203AEC);
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.9px; 
+    opacity: var(--color-action-disabled, 0.24);
+}
+
+.link-text--Default:hover,
+.link-text--Hovered:hover {
+  color: #31418C;
+  text-decoration: underline;
+}
