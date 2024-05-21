@@ -1,0 +1,43 @@
+.attachment{
+    width: 281px;
+    height: 66px;
+    border-radius: var(--radii-component-lg, 8px);
+    border: var(--border-width, 1px) solid var(--color-border-neutral-soft, #E5E5E8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: var(--color-background-primary, #FFF);
+    padding: 12px 16px 12px 24px;
+}
+
+.attachment-header{
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.teste{
+    display: grid;
+    grid-template-columns: 15% 15%;
+}
+
+.button1, .button2{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+
+.button1:hover, .button2:hover{
+    background-color: var(--color-action-hover-on-brand, #203AEC14);
+    border-radius: var(--radii-component-lg, 1px);
+    width: 40px;
+    height: 40px;
+}
+
+.button1:active, .button2:active{
+    background-color: var(--color-alpha-brand, red);
+}
