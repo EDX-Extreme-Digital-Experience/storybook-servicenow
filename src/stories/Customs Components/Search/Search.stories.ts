@@ -17,9 +17,9 @@ export const DefaultSearch: Story = {
         Placeholder: 'Placeholder',
         Scale: 'Default',
         State: 'Default',
-        CloseIcon: false,
-        SearchIcon: true,
-        SearchPlaceHolder: '',
+        DoubleIcon: false,
+        RightIcon: false,
+        SearchPlaceholder: '',
         Shape: 'Default',
     }
 }

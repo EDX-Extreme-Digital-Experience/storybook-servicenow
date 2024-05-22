@@ -1,9 +1,9 @@
 interface ISearch {
     State: 'Default' | 'Hover' | 'Active' | 'Disabled',
-    CloseIcon: boolean,
-    SearchIcon: boolean,
+    DoubleIcon: boolean,
+    RightIcon: boolean,
     Placeholder: string,
-    SearchPlaceHolder: string,
+    SearchPlaceholder: string,
     Scale: 'Default' | 'Compact' | 'Expanded',
     Shape: 'Default' | 'Rounded' | 'Sharp',
 }

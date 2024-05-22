@@ -6,16 +6,20 @@ const Search = ({
     State = 'Default',
     Scale = 'Default',
     Shape = 'Default',
-    CloseIcon = false,
-    SearchIcon = true,
-    SearchPlaceHolder = '',
+    RightIcon = false,
+    DoubleIcon = true,
+    SearchPlaceholder = '',
  }: ISearch) => {
 
-    const [searchValue, setSearchValue] = useState(SearchPlaceHolder);
+    const [searchValue, setSearchValue] = useState(SearchPlaceholder);
+
+    const showRightCloseIcon = DoubleIcon;
+    const showRightSearchIcon = RightIcon && !DoubleIcon;
+    const showLeftSearchIcon = !showRightSearchIcon;
 
     useEffect(() => {
-        setSearchValue(SearchPlaceHolder);
-    }, [SearchPlaceHolder])
+        setSearchValue(SearchPlaceholder);
+    }, [SearchPlaceholder])
 
     return (
         <div>
