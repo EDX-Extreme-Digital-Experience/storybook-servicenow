@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ISearch from "./ISearch";
+import './Search.css';
 
 const Search = ({
     Placeholder = 'Placeholder',
@@ -28,7 +29,7 @@ const Search = ({
                 placeholder={Placeholder}
                 value={searchValue}>
                 </input>
-            <button></button>
+            <button type="submit"><img src="magnifying_glass.png" alt="Search" /></button>
         </div>
     )
 }
