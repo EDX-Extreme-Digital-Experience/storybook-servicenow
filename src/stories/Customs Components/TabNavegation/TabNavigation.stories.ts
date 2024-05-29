@@ -20,7 +20,7 @@ export const tabNavigation: Story = {
         Status:'Default',
         Badge:true,
         Icon:true,
-        Title:'Titulo',
+        Title:'Tab 1',
         scale:'Default',
 
     
