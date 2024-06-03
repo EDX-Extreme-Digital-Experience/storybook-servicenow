@@ -3,8 +3,8 @@ import IHeading from './IHeading';
 
 
 export const Heading = ({
-    Text = 'Meus Chamados',
-    Size = 'Base',
+    Text = "Meus Chamados",
+    Size = "Base",
     link = true,
 }: IHeading) => {
     return (
