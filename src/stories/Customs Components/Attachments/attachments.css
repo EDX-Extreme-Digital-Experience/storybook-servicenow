@@ -64,7 +64,7 @@
 }
 
 .button1::before{
-    content: attr(data-tooltip);
+    content: attr(data-tooltip1);
     width: 55px;
     height: 28px;
     border-radius: 4px;
@@ -105,7 +105,7 @@
 }
 
 .button2::before{
-    content: attr(data-tooltip);
+    content: attr(data-tooltip2);
     width: 63px;
     height: 28px;
     border-radius: 4px;
@@ -144,8 +144,8 @@
     border-radius: var(--radii-component-lg, 8px);
 }
 
-.button1.hover[data-tooltip]::before {
-    content: attr(data-tooltip);
+.button1.hover[data-tooltip1]::before {
+    content: attr(data-tooltip1);
     width: 55px;
     height: 28px;
     border-radius: 4px;
@@ -155,8 +155,8 @@
     align-items: center;
 }
 
-.button1.hover[data-tooltip]::before,
-.button1.hover[data-tooltip]::after{
+.button1.hover[data-tooltip1]::before,
+.button1.hover[data-tooltip1]::after{
     scale: 1;
     position: absolute;
     transform-origin: top center;
@@ -168,7 +168,44 @@
     color: var(--color-content-invert, #FFFFFF);
 }
 
-.button1.hover[data-tooltip]::after {
+.button1.hover[data-tooltip1]::after {
+    content: '';
+    border: 10px solid transparent;
+    transform: rotate(180deg);
+    border-top-color: var(--color-background-inverse, #292626);
+    transform-origin: top center;
+}
+
+.button2.hover{
+    background-color: var(--color-action-hover-on-brand, #203AEC14);
+    border-radius: var(--radii-component-lg, 8px);
+}
+
+.button2.hover[data-tooltip2]::before {
+    content: attr(data-tooltip2);
+    width: 63px;
+    height: 28px;
+    border-radius: 4px;
+    background: var(--color-background-inverse, #262629);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button2.hover[data-tooltip2]::before,
+.button2.hover[data-tooltip2]::after{
+    scale: 1;
+    position: absolute;
+    transform-origin: top center;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-content-invert, #FFFFFF);
+}
+
+.button2.hover[data-tooltip2]::after {
     content: '';
     border: 10px solid transparent;
     transform: rotate(180deg);

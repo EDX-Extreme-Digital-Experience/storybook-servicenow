@@ -19,6 +19,7 @@ type StoryType = Story<typeof meta>;
 
 export const AttachmentsProps: StoryType = {
 args: {
-    hover: false,
+    downloadHover: false,
+    deleteHover: false,
 },
 };

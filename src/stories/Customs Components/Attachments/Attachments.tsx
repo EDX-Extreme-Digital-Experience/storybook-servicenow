@@ -3,10 +3,11 @@ import iconDonwload from '../../assets/download.png';
 import iconDismiss from '../../assets/x.png';
 
 export interface Attachments {
-hover: boolean;
+    downloadHover: boolean;
+    deleteHover: boolean;
 }
 
-export const Attachments: React.FC<Attachments> = ({ hover }) => {
+export const Attachments: React.FC<Attachments> = ({ downloadHover, deleteHover }) => {
 return (
 <div className="attachment">
     <div className="attachment-header">
@@ -17,12 +18,12 @@ return (
     </div>
     <div className="content-tooltips">
         <div>
-        <button className={`button1 ${hover ? 'hover' : ''}`} data-tooltip="Baixar">
+        <button className={`button1 ${downloadHover ? 'hover' : ''}`} data-tooltip1="Baixar">
                 <img src={iconDonwload} alt="Download"/>
         </button>
         </div>
         <div>
-            <button className="button2" data-tooltip="Deletar">
+            <button className={`button2 ${deleteHover ? 'hover' : ''}`} data-tooltip2="Deletar">
                 <img src={iconDismiss} alt="Dismiss"/>
             </button>
         </div>
