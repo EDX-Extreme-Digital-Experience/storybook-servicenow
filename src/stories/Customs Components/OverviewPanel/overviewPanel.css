@@ -9,7 +9,7 @@
     --color-background-secondary:#F5F5F6;
 
     --rounded-radii-component-lg:16px;
-    --sharp-radii-component-none:0px;
+    --sharp-radii-component-none:2px;
     --border-width-sm:1px;
     --default-padding-xl:12px;
     --default-padding-3xl:24px;
@@ -55,17 +55,12 @@
     font-family:'lato',sans-serif;
 }
 
-.content-true{
-    background-color: #CBCCD2;
-}
-
-
 .position-Begin{
     border-radius: var(--rounded-radii-component-lg) var(--sharp-radii-component-none) var(--sharp-radii-component-none) var(--rounded-radii-component-lg);
     padding: var(--default-padding-xl) var(--padding-none) var(--default-padding-xl) var(--default-padding-3xl);
     gap: var(--default-gap-xxs);
     width: 173px;
-    height: 103px;
+    height: auto;
     border-top: var(--border-width-sm) solid var(--color-border-neutral);
     border-right:0px ;
     border-bottom: var(--border-width-sm) solid var(--color-border-neutral);
@@ -76,7 +71,7 @@
     padding: var(--default-padding-xl) var(--padding-none) var(--default-padding-xl) var(--default-padding-3xl);
     gap: var(--default-gap-xxs);
     width: 173px;
-    height: 103px;
+    height: auto;
     border-top: var(--border-width-sm) solid var(--color-border-neutral);
     border-right:0px;
     border-bottom: var(--border-width-sm) solid var(--color-border-neutral);
@@ -87,7 +82,7 @@
     padding: var(--default-padding-xl) var(--padding-none) var(--default-padding-xl) var(--default-padding-3xl);
     gap: var(--default-gap-xxs);
     width: 173px;
-    height: 103px;
+    height: auto;
     border-top: var(--border-width-sm) solid var(--color-border-neutral);
     border-right: var(--border-width-sm) solid var(--color-border-neutral);
     border-bottom: var(--border-width-sm) solid var(--color-border-neutral);

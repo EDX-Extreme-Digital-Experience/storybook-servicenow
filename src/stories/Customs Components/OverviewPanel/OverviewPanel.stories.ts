@@ -21,7 +21,6 @@ const meta = {
         Selected:true,
         Label:'Tarefas',
         Number:'1',
-        estilo:true
 
     },
  };
