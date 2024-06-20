@@ -1,0 +1,214 @@
+.attachment{
+    width: 281px;
+    height: 66px;
+    top: 120px;
+    left: 16px;
+    border-radius: var(--radii-component-lg, 8px);
+    border: var(--border-width, 1px) solid var(--color-border-neutral-soft, #E5E5E8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: var(--color-background-primary, #FFF);
+    padding: var(--padding-xl, 12px 16px 12px 24px);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.attachment-header{
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: -2px;
+    color: var(--color-content-primary, #262629);
+}
+
+.descricao{
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.10px;
+    margin-top: -9px;
+    color: var(--color-content-terciary, #9698A4);
+}
+
+.content-tooltips{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.button1, .button2{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button1::before,
+.button1::after{
+    scale: 0;
+    position: absolute;
+    bottom: -27px;
+    left: 1%;
+    transform-origin: top center;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-content-invert, #FFFFFF);
+}
+
+.button1::before{
+    content: attr(data-tooltip1);
+    width: 55px;
+    height: 28px;
+    border-radius: 4px;
+    background: var(--color-background-inverse, #292626);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1::after{
+    content: '';
+    border: 10px solid transparent;
+    transform: rotate(180deg);
+    left: 15px;
+    bottom: -23px;
+    border-top-color: var(--color-background-inverse, #262629);
+    transform-origin: top center;
+}
+
+.button1:hover::before,
+.button1:hover::after{
+    scale: 1;
+}
+
+.button2::before,
+.button2::after{
+    scale: 0;
+    position: absolute;
+    bottom: -27px;
+    left: -24%;
+    transform-origin: top center;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-content-invert, #FFFFFF);
+}
+
+.button2::before{
+    content: attr(data-tooltip2);
+    width: 63px;
+    height: 28px;
+    border-radius: 4px;
+    background: var(--color-background-inverse, #262629);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button2::after{
+    content: '';
+    border: 10px solid transparent;
+    transform: rotate(180deg);
+    left: 11px;
+    bottom: -23px;
+    border-top-color: var(--color-background-inverse, #262629);
+    transform-origin: top center;
+}
+
+.button2:hover::before,
+.button2:hover::after{
+    scale: 1;
+}
+
+.button1:hover, .button2:hover{    
+    background-color: var(--color-action-hover-on-brand, #203AEC14);
+    border-radius: var(--radii-component-lg, 8px);
+}
+
+.button1:active, .button2:active{
+    background-color: var(--color-action-pressed-on-brand, #C7CEFA);
+}
+
+.button1.hover{
+    background-color: var(--color-action-hover-on-brand, #203AEC14);
+    border-radius: var(--radii-component-lg, 8px);
+}
+
+.button1.hover[data-tooltip1]::before {
+    content: attr(data-tooltip1);
+    width: 55px;
+    height: 28px;
+    border-radius: 4px;
+    background: var(--color-background-inverse, #292626);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1.hover[data-tooltip1]::before,
+.button1.hover[data-tooltip1]::after{
+    scale: 1;
+    position: absolute;
+    transform-origin: top center;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-content-invert, #FFFFFF);
+}
+
+.button1.hover[data-tooltip1]::after {
+    content: '';
+    border: 10px solid transparent;
+    transform: rotate(180deg);
+    border-top-color: var(--color-background-inverse, #292626);
+    transform-origin: top center;
+}
+
+.button2.hover{
+    background-color: var(--color-action-hover-on-brand, #203AEC14);
+    border-radius: var(--radii-component-lg, 8px);
+}
+
+.button2.hover[data-tooltip2]::before {
+    content: attr(data-tooltip2);
+    width: 63px;
+    height: 28px;
+    border-radius: 4px;
+    background: var(--color-background-inverse, #262629);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button2.hover[data-tooltip2]::before,
+.button2.hover[data-tooltip2]::after{
+    scale: 1;
+    position: absolute;
+    transform-origin: top center;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--color-content-invert, #FFFFFF);
+}
+
+.button2.hover[data-tooltip2]::after {
+    content: '';
+    border: 10px solid transparent;
+    transform: rotate(180deg);
+    border-top-color: var(--color-background-inverse, #292626);
+    transform-origin: top center;
+}
