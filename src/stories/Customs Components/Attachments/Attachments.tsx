@@ -18,9 +18,9 @@ return (
     </div>
     <div className="content-tooltips">
         <div>
-        <button className={`button1 ${downloadHover ? 'hover' : ''}`} data-tooltip1="Baixar">
-                <img src={iconDonwload} alt="Download"/>
-        </button>
+            <button className={`button1 ${downloadHover ? 'hover' : ''}`} data-tooltip1="Baixar">
+                    <img src={iconDonwload} alt="Download"/>
+            </button>
         </div>
         <div>
             <button className={`button2 ${deleteHover ? 'hover' : ''}`} data-tooltip2="Deletar">
