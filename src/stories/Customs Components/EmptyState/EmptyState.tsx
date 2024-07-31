@@ -6,14 +6,7 @@ import Ilustration3 from '../../assets/Ilustration3.png';
 import Ilustration4 from '../../assets/Ilustration4.png';
 import Ilustration5 from '../../assets/Ilustration5.png';
 
-
-const illustrations = {
-  Ilustration1,
-  Ilustration2,
-  Ilustration3,
-  Ilustration4,
-  Ilustration5
-};
+const illustrations = { Ilustration1, Ilustration2, Ilustration3,Ilustration4, Ilustration5 };
 
 export interface EmptyStatesProps {
   text: string;
@@ -23,17 +16,11 @@ export interface EmptyStatesProps {
   buttonHover: boolean;
 }
 
-export const EmptyState: React.FC<EmptyStatesProps> = ({
-  text,
-  description,
-  type,
-  buttonLabel,
-  buttonHover,
-}) => {
+export const EmptyState: React.FC<EmptyStatesProps> = ({ text, description, type, buttonLabel, buttonHover, }) => {
   return (
     <div className='contents'>
       <div className="content-img">
-        <img src={illustrations[type]} alt="Ilustração" />
+        <img src={illustrations[type]} alt="Ilustração"/>
       </div>
       <div className='content-text'>
         <h2>{text}</h2>
