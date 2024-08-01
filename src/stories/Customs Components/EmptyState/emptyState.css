@@ -1,0 +1,42 @@
+.contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+}
+
+.content-img{
+  height: auto;
+  margin: 0 auto; 
+}
+
+h2{
+  color: var(--color-content-primary, #262629);
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26.4px;
+  text-align: center;
+}
+
+p{
+  color: var(--color-content-secondary, #4B4C52);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.9px;
+  text-align: center; 
+}
+
+.content-button button{
+  cursor: pointer;
+}
+
+.content-button button:hover {
+  background-color: var(--button-primary-hover, #182CB1);
+}
+
+.content-button button:active{
+  background-color: var(--button-primary-pressed, #101D76);
+}
