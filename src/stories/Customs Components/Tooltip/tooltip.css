@@ -1,0 +1,113 @@
+.tooltip-container{
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+}
+
+.tooltip{
+  padding: var(--padding-xxs, 4px) var(--padding-sm, 8px);
+  background-color: var(--color-background-inverse, #292626);
+  color: var(--color-content-invert, #FFFFFF);
+  border-radius: var(--radii-surface-md, 4px);
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap; 
+  z-index: 1; 
+  gap: var(--gap-xxs, 8px);
+}
+
+.tooltip::before{
+  content: attr(data-tooltip); 
+}
+
+.tooltip::after{
+  content: '';
+  position: absolute;
+  border-style: solid;
+}
+
+.tooltip-top{
+  bottom: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 9px; 
+}
+
+.tooltip-top::before{
+  bottom: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+}
+
+.tooltip-top::after{
+  top: -31%;
+  left: 50%;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent var(--color-background-inverse, #292626) transparent;
+  transform: translateX(-50%);
+}
+
+.tooltip-right{
+  top: 50%;
+  left: 100%; 
+  transform: translateY(-50%);
+}
+
+.tooltip-right::before{
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+.tooltip-right::after{
+  top: 50%;
+  right: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent var(--color-background-inverse, #292626);
+  transform: translateY(-50%);
+}
+
+.tooltip-bottom{
+  top: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+}
+
+.tooltip-bottom::before{
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+}
+
+.tooltip-bottom::after{
+  top: 107%;
+  left: 50%;
+  border-width: 5px 5px 0 5px;
+  border-color: var(--color-background-inverse, #292626) transparent transparent transparent;
+  transform: translateX(-50%);
+}
+
+.tooltip-left {
+  top: 50%;
+  right: 100%; 
+  transform: translateY(-50%);
+}
+
+.tooltip-left::before{
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+}
+
+.tooltip-left::after{
+  top: 50%;
+  left: -4.5px;
+  border-width: 5px 5px 5px 0;
+  border-color: transparent var(--color-background-inverse, #292626) transparent transparent;
+  transform: translateY(-50%);
+}
