@@ -43,7 +43,7 @@
 }
 
 .tooltip-top::after{
-  top: -35%;
+  top: -31%;
   left: 50%;
   border-width: 0 5px 5px 5px;
   border-color: transparent transparent var(--color-background-inverse, #292626) transparent;
@@ -85,7 +85,7 @@
 }
 
 .tooltip-bottom::after{
-  top: 113%;
+  top: 107%;
   left: 50%;
   border-width: 5px 5px 0 5px;
   border-color: var(--color-background-inverse, #292626) transparent transparent transparent;
