@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.shape-Default{
+    width:359px;
+    height:154px;
+    padding: 24px;
+    gap:16px;
+}
+
+.shape-Rounded{
+    width:359px;
+    height:154px;
+    padding: 24px;
+    gap:16px;
+}
+
+.shape-Sharp{
+    width:359px;
+    height:154px;
+    padding: 24px;
+    gap:16px;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.Header .badge, .icon{
+    align-items: flex-end;
+    
+    
+}
+
+
+
+
+
+
+.Content{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+   
+}
+
+.Image{
+    height: 54px;
+    
+}
+
+.texts{
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+    margin-left:12px;
+    font-family:'lato',sans-serif;
+
+}
+
+.Button{
+    float: right;
+}
+
+
+
