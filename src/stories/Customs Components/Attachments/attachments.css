@@ -48,167 +48,42 @@
     position: relative;
 }
 
-.button1::before,
-.button1::after{
-    scale: 0;
-    position: absolute;
-    bottom: -27px;
-    left: 1%;
-    transform-origin: top center;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    color: var(--color-content-invert, #FFFFFF);
-}
-
-.button1::before{
-    content: attr(data-tooltip1);
-    width: 55px;
-    height: 28px;
-    border-radius: 4px;
-    background: var(--color-background-inverse, #292626);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button1::after{
-    content: '';
-    border: 10px solid transparent;
-    transform: rotate(180deg);
-    left: 15px;
-    bottom: -23px;
-    border-top-color: var(--color-background-inverse, #262629);
-    transform-origin: top center;
-}
-
-.button1:hover::before,
-.button1:hover::after{
-    scale: 1;
-}
-
-.button2::before,
-.button2::after{
-    scale: 0;
-    position: absolute;
-    bottom: -27px;
-    left: -24%;
-    transform-origin: top center;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    color: var(--color-content-invert, #FFFFFF);
-}
-
-.button2::before{
-    content: attr(data-tooltip2);
-    width: 63px;
-    height: 28px;
-    border-radius: 4px;
-    background: var(--color-background-inverse, #262629);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button2::after{
-    content: '';
-    border: 10px solid transparent;
-    transform: rotate(180deg);
-    left: 11px;
-    bottom: -23px;
-    border-top-color: var(--color-background-inverse, #262629);
-    transform-origin: top center;
-}
-
-.button2:hover::before,
-.button2:hover::after{
-    scale: 1;
-}
-
-.button1:hover, .button2:hover{    
+.button1.hover, .button2.hover{
     background-color: var(--color-action-hover-on-brand, #203AEC14);
     border-radius: var(--radii-component-lg, 8px);
+}
+
+.button1.hover .tooltips, .button2.hover .tooltips{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.button1 .tooltips, .button2 .tooltips{
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.button1:hover .tooltips, .button2:hover .tooltips{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .button1:active, .button2:active{
     background-color: var(--color-action-pressed-on-brand, #C7CEFA);
 }
 
-.button1.hover{
-    background-color: var(--color-action-hover-on-brand, #203AEC14);
-    border-radius: var(--radii-component-lg, 8px);
-}
 
-.button1.hover[data-tooltip1]::before {
-    content: attr(data-tooltip1);
-    width: 55px;
-    height: 28px;
-    border-radius: 4px;
-    background: var(--color-background-inverse, #292626);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button1.hover[data-tooltip1]::before,
-.button1.hover[data-tooltip1]::after{
+.button1.hover::before, .button2.hover::before,
+.button1:hover::before, .button2:hover::before{
     scale: 1;
-    position: absolute;
-    transform-origin: top center;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    color: var(--color-content-invert, #FFFFFF);
 }
 
-.button1.hover[data-tooltip1]::after {
-    content: '';
-    border: 10px solid transparent;
-    transform: rotate(180deg);
-    border-top-color: var(--color-background-inverse, #292626);
-    transform-origin: top center;
-}
-
-.button2.hover{
-    background-color: var(--color-action-hover-on-brand, #203AEC14);
-    border-radius: var(--radii-component-lg, 8px);
-}
-
-.button2.hover[data-tooltip2]::before {
-    content: attr(data-tooltip2);
-    width: 63px;
-    height: 28px;
-    border-radius: 4px;
-    background: var(--color-background-inverse, #262629);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button2.hover[data-tooltip2]::before,
-.button2.hover[data-tooltip2]::after{
-    scale: 1;
-    position: absolute;
-    transform-origin: top center;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    color: var(--color-content-invert, #FFFFFF);
-}
-
-.button2.hover[data-tooltip2]::after {
-    content: '';
-    border: 10px solid transparent;
-    transform: rotate(180deg);
-    border-top-color: var(--color-background-inverse, #292626);
-    transform-origin: top center;
+.tooltips{
+    bottom: 80px;
+    transform: translateX(-50%);  
 }
